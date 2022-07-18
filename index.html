@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Budget</title>
     <!-- LINK FOR STYLESHEET -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
     <!-- LINK FOR GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="container">
             <!-- SITE-NAVBAR -->
             <nav class="navbar">
                 <div class="navbar-logo">
-                    <img class="navbar-logo-img" src="./assets/media/logo.svg" alt="Navbar logo" width="25" height="17">
+                    <img class="navbar-logo-img" src="./src/images/logo.svg" alt="Navbar logo" width="25" height="17">
                     <a class="navbar-logo-text" href="#">CloudBudget</a>
                 </div>
                 <ul class="navbar-list">
-                    <li class="list-item"><a class="item-link" href="#">Обзор</a></li>
-                    <li class="list-item"><a class="item-link" href="#">Особенности</a></li>
-                    <li class="list-item"><a class="item-link" href="#">Технология</a></li>
-                    <li class="list-item"><a class="item-link" href="#">Контакты</a></li>
+                    <li class="list-item"><a class="item-link" href="#about">Обзор</a></li>
+                    <li class="list-item"><a class="item-link" href="#chance">Особенности</a></li>
+                    <li class="list-item"><a class="item-link" href="#techno">Технология</a></li>
+                    <li class="list-item"><a class="item-link" href="#contact">Контакты</a></li>
                     <li class="list-item"><a class="item-link" href="#">Войти</a></li>
                 </ul>
                 <a class="navbar-button" href="#">Вход</a>
@@ -39,5 +40,132 @@
             </div>
         </div>
     </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- ABOUT -->
+        <section class="about container" id="about">
+            <div class="about-content">
+                <h2 class="about-content-title">Простое приложение для управления бюджетом</h2>
+                <p class="about-content-description">Наше приложение создано, чтобы вы могли в реальном времени управлять своим бюджетом и расходами в режиме онлайн с любого устройства. Оно предоставляет подробные отчеты о доходах и расходах с графиками, чтобы вы сразу могли увидеть расходы и бюджет. Читайте ниже, чтобы узнать больше.</p>
+                <a class="about-content-link" href="#">Узнать подробнее</a>
+            </div>
+            <img class="about-img" src="./src/images/about.jpg" alt="Gaplashib o'tirgan odamlar rasmi" width="445" height="311" srcset="./src/images/about.jpg 1x, ./src/images/about@2x.jpg 2x">
+        </section>
+
+        <!-- CHANCE -->
+        <section class="chance" id="chance">
+            <div class="container">
+                <h2 class="chance-title">Возможности</h2>
+                <div class="chance-cards">
+                    <div class="chance-card">
+                        <img src="./src/images/card-1.jpg" alt="First card's photo" width="350" height="250" srcset="./src/images/card-1.jpg 1x, ./src/images/card-1@2x.jpg 2x">
+                        <div class="chance-card-content">
+                            <h3 class="card-content-title">Поддерживает все валюты и карты</h3>
+                            <p class="card-content-description">Мы поддерживаем все популярные валюты и полностью настраиваем, чтобы добавить</p>
+                            <a class="card-content-link" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="chance-card">
+                        <img src="./src/images/card-2.jpg" alt="Second card's photo" width="350" height="250" srcset="./src/images/card-2.jpg 2x, ./src/images/card-2@2x.jpg">
+                        <div class="chance-card-content">
+                            <h3 class="card-content-title">Управляйте своими расходами на ходу</h3>
+                            <p class="card-content-description">Вы можете получить доступ к своей учетной записи из любой точки мира на любом устройстве</p>
+                            <a class="card-content-link" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="chance-card">
+                        <img src="./src/images/card-3.jpg" alt="Third card's photo" width="350" height="250" srcset="./src/images/card-3.jpg 1x, ./src/images/card-3@2x.jpg 2x">
+                        <div class="chance-card-content">
+                            <h3 class="card-content-title">Управление бюджетом осуществляется в облаке</h3>
+                            <p class="card-content-description">Наше приложение создано для того, чтобы вы могли управлять управлять своим бюджетом. </p>
+                            <a class="card-content-link" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNO -->
+        <section class="techno container" id="techno">
+            <h2 class="techno-title">Технологии</h2>
+            <div class="techno-cards">
+                <div class="techno-card">
+                    <div class="techno-card-content">
+                        <p class="techno-card-bg">01</p>
+                        <img src="./src/images/icon-techno-1.svg" alt="Cloud" width="80" height="80">
+                    </div>
+                    <h3 class="techno-card-title">Облачное хранение</h3>
+                    <p class="techno-card-description">Доступ из любой точки мира с любого устройства</p>
+                </div>
+                <div class="techno-card">
+                    <div class="techno-card-content">
+                        <p class="techno-card-bg">02</p>
+                        <img src="./src/images/icon-techno-2.svg" alt="Search" width="66" height="66">
+                    </div>
+                    <h3 class="techno-card-title">Облачное хранение</h3>
+                    <p class="techno-card-description">Доступ из любой точки мира с любого устройства</p>
+                </div>
+                <div class="techno-card">
+                    <div class="techno-card-content">
+                        <p class="techno-card-bg">03</p>
+                        <img src="./src/images/icon-techno-3.svg" alt="PDF" width="70" height="70">
+                    </div>
+                    <h3 class="techno-card-title">Облачное хранение</h3>
+                    <p class="techno-card-description">Доступ из любой точки мира с любого устройства</p>
+                </div>
+                <div class="techno-card">
+                    <div class="techno-card-content">
+                        <p class="techno-card-bg">04</p>
+                        <img src="./src/images/icon-techno-4.svg" alt="CSV" width="47" height="54">
+                    </div>
+                    <h3 class="techno-card-title">Облачное хранение</h3>
+                    <p class="techno-card-description">Доступ из любой точки мира с любого устройства</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- APPLICATION -->
+        <section class="application" id="application">
+            <div class="d-f container">
+                <div class="application-content">
+                    <h3 class="application-content-title">Сосредоточьтесь на экономии денег</h3>
+                    <p class="application-content-description">Мы помогаем вам отслеживать ваши привычки в расходах, чтобы вы могли легко определить и сократить ненужные расходы. Просто присоединяйтесь сегодня, чтобы начать!</p>
+                    <a href="#">
+                        <img src="./src/images/icon-logo-google-playstore.svg" alt="Playstore" width="32" height="32">
+                    </a>
+                    <a href="#">
+                        <img src="./src/images/icon-logo-apple-appstore.svg" alt="Appstore" width="32" height="32">
+                    </a>
+                </div>
+                <img class="application-content-img" src="./src/images/application.jpg" alt="Bitta okaning rasmi" width="445" height="311" srcset="./src/images/application.jpg 1x, ./src/images/application@2x.jpg 2x">
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <div class="d-f container">
+                <div class="contact-content">
+                    <h3 class="contact-content-title">Напишите нам</h3>
+                    <p class="contact-content-description">Остались вопросы или опасения? Просто заполните форму ниже, и наша служба поддержки свяжется с вами в течение 24 часов.</p>
+                    
+                </div>
+                <form class="contact-form" action="/server.php">
+                    <input class="input-form" type="text" name="name" id="name" placeholder="Имя">
+                    <input class="input-form" type="number" name="number" id="number" placeholder="Телефон">
+                    <button class="send-button" type="submit">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <h3 class="footer-title">Адрес</h3>
+            <p class="footer-description font">Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor 1090 Picosia USA</p>
+            <p class="copyright font">&copy; Copyright 2021 CloudBudget</p>
+        </div>
+    </footer>
 </body>
 </html>
